@@ -3,7 +3,7 @@ import { Route } from 'react-router-dom';
 
 import Home from './home/presenter';
 import About from './about/presenter';
-
+import wpFuckOff from './errors/wpAdminFuckYou';
 import NotFound from './errors/notFound';
 
 const routes = [
@@ -16,6 +16,11 @@ const routes = [
     path: '/about',
     exact: true,
     component: About,
+  },
+  {
+    path: '/wp-admin',
+    exact: true,
+    component: wpFuckOff,
   },
   {
     path: '*',
