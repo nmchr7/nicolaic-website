@@ -1,0 +1,21 @@
+{
+  "env": {
+      "browser": true,
+      "es6": true,
+      "node": true,
+      "mocha": true
+  },
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "rules": {
+      "no-multiple-empty-lines": [ 2, { "max": 1, "maxEOF": 0, "maxBOF": 0 } ],
+
+      "no-use-before-define": [ 2, { "functions": false } ],
+      
+      "react/jsx-filename-extension": 0,
+      "jsx-a11y/anchor-is-valid": [ "error", {
+        "components": [ "Link" ],
+        "specialLink": [ "to" ]
+      }]
+  }
+}
