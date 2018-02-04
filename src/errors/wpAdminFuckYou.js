@@ -16,7 +16,6 @@ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 
 }}
     >
       <img src={notFoundImg} alt="not.-found" />
-      <h1 style={{ textAlign: 'center' }} >Wordpress ... seriously!?!</h1>
     </div>
   </div>
 );
