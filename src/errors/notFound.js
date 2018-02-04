@@ -5,7 +5,7 @@ import SEO from '../util/seo';
 import notFoundImg from '../assets/not-found.png';
 
 const NotFound = () => (
-  <div className="mchristensen-page">
+  <div className="nicolaic-page">
     <SEO
       schema="WebPage"
       title="NOT FOUND"

@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet';
 
 import seoImageURL from '../assets/fiber.jpg';
 
-const seoURL = path => `https://mchristensen.me${path}`;
+const seoURL = path => `https://nicolaic.com${path}`;
 
 const getMetaTags = ({
   title,
@@ -23,12 +23,12 @@ const getMetaTags = ({
     { itemprop: 'description', content: description },
     { itemprop: 'image', content: seoImageURL },
     { name: 'description', content: description },
-    { name: 'og:title', content: `${title} | mchristensen` },
+    { name: 'og:title', content: `${title} | nicolaic` },
     { name: 'og:type', content: contentType },
     { name: 'og:url', content: url },
     { name: 'og:image', content: seoImageURL },
     { name: 'og:description', content: description },
-    { name: 'og:site_name', content: 'mchristensen' },
+    { name: 'og:site_name', content: 'nicolaic' },
     // { name: 'fb:app_id', content: '1645952115430593' }, TODO:
   ];
 

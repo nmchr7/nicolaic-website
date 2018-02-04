@@ -2,7 +2,7 @@ import React from 'react';
 import SEO from '../util/seo';
 
 const Home = () => (
-  <div className="mchristensen-page">
+  <div className="nicolaic-page">
     <SEO
       schema="WebPage"
       title="Home page"

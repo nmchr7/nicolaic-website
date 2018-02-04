@@ -5,7 +5,7 @@ import Menu from './menu/presenter';
 
 const Header = () => (
   <AppBar
-    title="mchristensen"
+    title="nicolaic"
     iconElementLeft={<div />}
     iconElementRight={<Menu />}
   />
