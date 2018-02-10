@@ -33,3 +33,12 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
         
       - run: npm run test
+      
+      dependencies:
+        override:
+      - sudo pip install awscli
+      deployment:
+        prod:
+          branch: master
+          commands:
+      - aws s3 sync /home/ubuntu/nicolaic-website s3://nicolaic.com --delete
