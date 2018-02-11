@@ -8,12 +8,20 @@ jobs:
     docker:
 
       - image: circleci/node:9.5.0
-      - image: mesosphere/aws-cli
 
     working_directory: ~/nicolaic-website
 
     steps:
       - checkout
+      - run:
+        name: Install dependencies
+        working_directory: /
+        command: |
+          apt-get -y -qq update
+          apt-get -y -qq install python3.4-dev
+          curl -O https://bootstrap.pypa.io/get-pip.py
+          python3.4 get-pip.py --user
+          pip install awscli --upgrade --user
 
       - restore_cache:
           keys:
