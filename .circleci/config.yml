@@ -1,4 +1,3 @@
-# Javascript Node CircleCI 2.0 configuration file
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
@@ -26,9 +25,5 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-      
-      - run:
-          name: Linting
-          command: npm run lint
 
       - run: npm run test
