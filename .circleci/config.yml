@@ -5,22 +5,16 @@ version: 2
 jobs:
   build:
     docker:
-
       - image: circleci/node:9.5.0
-
     working_directory: ~/nicolaic-website
-
-    steps:
+      steps:
       - checkout
-
+       - run:
+          command: 'sudo npm install -g npm@latest'
       - restore_cache:
-          keys:
-          - v1-dependencies-{{ checksum "package.json" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
-
-      - run: yarn install
-
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          command: npm install
       - save_cache:
           paths:
             - node_modules
