@@ -13,7 +13,6 @@ jobs:
     working_directory: ~/nicolaic-website
 
     steps:
-      - pip install awscli --upgrade --user
       - checkout
 
       - restore_cache:
