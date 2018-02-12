@@ -9,7 +9,7 @@ const Home = () => (
       path="/"
       description="Development in progress - This will be my Home page"
     />
-    <h1>Homers page</h1>
+    <h1>Home page</h1>
   </div>
 );
 
