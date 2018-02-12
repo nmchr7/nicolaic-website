@@ -40,4 +40,4 @@ jobs:
 
       - run:
           name: Deploy to S3 if tests pass and branch is Master
-          command: aws s3 sync ~/nicolaic-website/build s3://nicolaic --delete
+          command: aws s3 sync ~/nicolaic-website/build s3://nicolaic.com --delete
