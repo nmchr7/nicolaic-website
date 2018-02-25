@@ -1,27 +1,23 @@
 import React from 'react';
-import RaisedButton from 'material-ui/RaisedButton';
 
 import { Link } from 'react-router-dom';
 
 const Menu = () => (
   <div
     style={{
+      paddingRight: 20,
+      backgroundColor: '#333',
       display: 'flex',
+      justifyContent: 'flex-end',
       alignItems: 'center',
     }}
   >
-    <Link to="/">
-      <RaisedButton
-        style={{
-          margin: 10,
-        }}
-        label="Home"
-        primary
-      />
+    <Link style={{ margin: 5 }} to="/">
+      <p style={{ color: 'white' }}>Home</p>
     </Link>
 
-    <Link to="/about">
-      <RaisedButton label="About" primary />
+    <Link style={{ margin: 5 }} to="/about">
+      <p style={{ color: 'white' }}>About</p>
     </Link>
   </div>
 );
