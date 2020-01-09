@@ -1,21 +1,31 @@
 {
   "env": {
-      "browser": true,
-      "es6": true,
-      "node": true,
-      "mocha": true
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true
   },
-  "extends": "airbnb",
-  "parser": "babel-eslint",
+  "plugins": ["react", "react-hooks"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2018
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
   "rules": {
-      "no-multiple-empty-lines": [ 2, { "max": 1, "maxEOF": 0, "maxBOF": 0 } ],
-
-      "no-use-before-define": [ 2, { "functions": false } ],
-      
-      "react/jsx-filename-extension": 0,
-      "jsx-a11y/anchor-is-valid": [ "error", {
-        "components": [ "Link" ],
-        "specialLink": [ "to" ]
-      }]
+    "linebreak-style": ["error", "unix"],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/react-in-jsx-scope": "off"
   }
 }
