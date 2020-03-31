@@ -13,7 +13,7 @@
   "dependencies": {
     "@nmchr7/nprogress": "~0.2.2",
     "dotenv": "~8.2.0",
-    "next": "~9.1.6",
+    "next": "~9.3.2",
     "next-offline": "5.0.0-beta.11",
     "next-seo": "~3.2.0",
     "react": "~16.12.0",
