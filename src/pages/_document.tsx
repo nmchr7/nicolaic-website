@@ -63,6 +63,21 @@ export default class MainDocument extends Document {
                js.src = "https://connect.facebook.net/en_US/sdk.js";
                fjs.parentNode.insertBefore(js, fjs);
              }(document, 'script', 'facebook-jssdk'));
+
+             (function(uid, w, d, s, o, f, js, fjs) {
+              w['hoodheroes-widget'] = o;
+              w['hh-uid'] = uid;
+              w[o] =
+                w[o] ||
+                function() {
+                  (w[o].q = w[o].q || []).push(arguments);
+                };
+              (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+              js.src = f;
+              js.async = 1;
+              fjs.parentNode.insertBefore(js, fjs);
+            })(25, window, document, 'script', 'hoodhero', 'https://hhtestwidgetstorage.blob.core.windows.net/scripts/standard/widget.bundle.js');
+            hoodhero('init');
           `,
             }}
           />

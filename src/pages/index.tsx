@@ -11,6 +11,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Title>Welcome</Title>
+      <div className="attached-widget"></div>
     </>
   );
 };
