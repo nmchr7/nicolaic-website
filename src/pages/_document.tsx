@@ -9,7 +9,7 @@ export default class MainDocument extends Document {
     try {
       ctx.renderPage = () =>
         originalRenderPage({
-          enhanceApp: App => props => sheet.collectStyles(<App {...props} />),
+          enhanceApp: (App) => (props) => sheet.collectStyles(<App {...props} />),
         });
 
       const initialProps = await Document.getInitialProps(ctx);
@@ -77,7 +77,7 @@ export default class MainDocument extends Document {
               js.async = 1;
               fjs.parentNode.insertBefore(js, fjs);
             })(25, window, document, 'script', 'hoodhero', 'https://hhtestwidgetstorage.blob.core.windows.net/scripts/standard/widget.bundle.js');
-            hoodhero('init');
+            hoodhero('init', { type: 'rating', size: 'small' });
           `,
             }}
           />
