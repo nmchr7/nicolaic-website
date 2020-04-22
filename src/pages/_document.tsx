@@ -76,7 +76,7 @@ export default class MainDocument extends Document {
               js.src = f;
               js.async = 1;
               fjs.parentNode.insertBefore(js, fjs);
-            })(25, window, document, 'script', 'hoodhero', 'https://hhtestwidgetstorage.blob.core.windows.net/scripts/standard/widget.bundle.js');
+            })(25, window, document, 'script', 'hoodheroes', 'https://hhtestwidgetstorage.blob.core.windows.net/scripts/standard/widget.bundle.js');
             hoodheroes('init', { type: 'rating', size: 'small' });
           `,
             }}
