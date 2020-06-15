@@ -1,4 +1,3 @@
-import React from 'react';
 import { NextPage } from 'next';
 import styled from 'styled-components';
 
@@ -8,12 +7,7 @@ const Title = styled.h1`
 `;
 
 const Home: NextPage = () => {
-  return (
-    <>
-      <Title>Welcome</Title>
-      <div className="hoodheroes-widget-container"></div>
-    </>
-  );
+  return <Title>Welcome</Title>;
 };
 
 export default Home;
