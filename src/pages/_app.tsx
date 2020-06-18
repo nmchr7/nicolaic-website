@@ -2,8 +2,7 @@ import { AppProps } from 'next/app';
 import { ThemeProvider } from 'styled-components';
 import { DefaultSeo } from 'next-seo';
 
-import '../style/default.css';
-
+import GlobalStyle from '../style/global';
 import SEO from '../../next-seo.config';
 
 const theme = {
@@ -18,6 +17,7 @@ export default ({ Component, pageProps }: AppProps) => {
     <ThemeProvider theme={theme}>
       <DefaultSeo {...SEO} />
       <Component {...pageProps} />
+      <GlobalStyle />
     </ThemeProvider>
   );
 };
