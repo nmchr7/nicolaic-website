@@ -17,10 +17,10 @@ export const pageview = (url: String) => {
   });
 };
 
-export function GAEvent({ action, category, label, value }: GAEvent) {
+export const GAEvent = ({ action, category, label, value }: GAEvent) => {
   window.gtag('event', action, {
     event_category: category,
     event_label: label,
-    value: value,
+    value,
   });
-}
+};

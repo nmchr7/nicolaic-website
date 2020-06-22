@@ -1,4 +1,4 @@
-export default () => (
+const GlobalStyle = () => (
   <div>
     <style jsx global>{`
       * {
@@ -98,3 +98,5 @@ export default () => (
     `}</style>
   </div>
 );
+
+export default GlobalStyle;

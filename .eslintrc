@@ -3,20 +3,16 @@
     "browser": true
   },
   "plugins": ["react", "prettier", "react-hooks"],
-  "extends": ["airbnb", "prettier", "prettier/react", "plugin:react/recommended"],
+  "extends": ["airbnb-typescript", "prettier", "prettier/react", "plugin:react/recommended"],
   "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": 2018,
-    "sourceType": "module"
+    "project": "./tsconfig.json"
   },
   "rules": {
-    "linebreak-style": ["error", "unix"],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/self-closing-comp": "warn",
     "react/react-in-jsx-scope": "off",
+    "react/jsx-props-no-spreading": "off",
     "no-console": "error"
   }
 }

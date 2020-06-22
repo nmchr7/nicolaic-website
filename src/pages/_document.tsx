@@ -29,19 +29,20 @@ export default class MainDocument extends Document {
   render() {
     return (
       <html lang="en">
-        <link rel="manifest" href="/manifest.json"></link>
+        <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#f95700" />
 
-        <link rel="apple-touch-icon" href="/images/icons/icon-192x192.png"></link>
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"></link>
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"></link>
-        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png"></link>
+        <link rel="apple-touch-icon" href="/images/icons/icon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
         <Head>
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
           />
           <script
+            // eslint-disable-next-line react/no-danger
             dangerouslySetInnerHTML={{
               __html: `
             window.dataLayer = window.dataLayer || [];

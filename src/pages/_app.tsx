@@ -12,7 +12,7 @@ const theme = {
   },
 };
 
-export default ({ Component, pageProps }: AppProps) => {
+const App = ({ Component, pageProps }: AppProps) => {
   return (
     <ThemeProvider theme={theme}>
       <DefaultSeo {...SEO} />
@@ -21,3 +21,5 @@ export default ({ Component, pageProps }: AppProps) => {
     </ThemeProvider>
   );
 };
+
+export default App;
