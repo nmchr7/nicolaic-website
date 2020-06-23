@@ -1,4 +1,3 @@
-import { NextPage } from 'next';
 import styled from 'styled-components';
 
 const Title = styled.h1`
@@ -6,8 +5,12 @@ const Title = styled.h1`
   color: ${({ theme }) => theme.colors.primary};
 `;
 
-const Home: NextPage = () => {
-  return <Title>Welcome</Title>;
+const Home = () => {
+  return (
+    <>
+      <Title>Welcome</Title>
+    </>
+  );
 };
 
 export default Home;

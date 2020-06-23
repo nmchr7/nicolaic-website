@@ -1,15 +1,26 @@
 {
   "env": {
-    "browser": true
+    "browser": true,
+    "es6": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": false
   },
   "plugins": ["react", "prettier", "react-hooks"],
-  "extends": ["airbnb-typescript", "prettier", "prettier/react", "plugin:react/recommended"],
-  "parserOptions": {
-    "project": "./tsconfig.json"
+  "extends": ["airbnb", "prettier", "prettier/react", "plugin:react/recommended"],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx"]
+      }
+    }
   },
   "rules": {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
+    "react/prop-types": "off",
     "react/self-closing-comp": "warn",
     "react/react-in-jsx-scope": "off",
     "react/jsx-props-no-spreading": "off",
