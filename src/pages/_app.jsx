@@ -1,4 +1,3 @@
-import { ThemeProvider } from 'styled-components';
 import { DefaultSeo } from 'next-seo';
 import * as Sentry from '@sentry/node';
 
@@ -10,21 +9,10 @@ Sentry.init({
   dsn: process.env.NEXT_PUBLIC_SENTRY_DSN,
 });
 
-const theme = {
-  colors: {
-    primary: '#F95700',
-    secondary: '#00A4CC',
-  },
-};
-
-const App = ({ Component, pageProps }) => {
-  return (
-    <ThemeProvider theme={theme}>
-      <DefaultSeo {...SEO} />
-      <Component {...pageProps} />
-      <GlobalStyle />
-    </ThemeProvider>
-  );
-};
-
-export default App;
+export default ({ Component, pageProps }) => (
+  <>
+    <DefaultSeo {...SEO} />
+    <Component {...pageProps} />
+    <GlobalStyle />
+  </>
+);

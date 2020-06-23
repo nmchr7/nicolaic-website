@@ -1,7 +1,6 @@
 {
   "env": {
-    "browser": true,
-    "es6": true
+    "browser": true
   },
   "parser": "babel-eslint",
   "parserOptions": {
@@ -21,6 +20,7 @@
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/prop-types": "off",
+    "react/display-name": "off",
     "react/self-closing-comp": "warn",
     "react/react-in-jsx-scope": "off",
     "react/jsx-props-no-spreading": "off",

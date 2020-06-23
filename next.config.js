@@ -1,8 +1,12 @@
 const withSourceMaps = require('@zeit/next-source-maps')();
 const SentryWebpackPlugin = require('@sentry/webpack-plugin');
 const withPWA = require('next-pwa');
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+});
 
 const {
+  ANALYZE,
   NEXT_PUBLIC_SENTRY_DSN: SENTRY_DSN,
   SENTRY_ORG,
   SENTRY_PROJECT,
@@ -19,6 +23,7 @@ const nextConfig = {
       copy.resolve.alias['@sentry/node'] = '@sentry/browser';
     }
     if (
+      !ANALYZE &&
       SENTRY_DSN &&
       SENTRY_ORG &&
       SENTRY_PROJECT &&
@@ -61,4 +66,4 @@ const nextConfig = {
   },
 };
 
-module.exports = withSourceMaps(withPWA(nextConfig));
+module.exports = withSourceMaps(withBundleAnalyzer(withPWA(nextConfig)));
