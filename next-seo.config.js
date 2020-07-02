@@ -1,14 +1,14 @@
 export default {
-  title: 'nicolaic.com',
-  canonical: 'https://nicolaic.com',
-  description: 'This is my website and yeah -> its very much under construction',
+  title: 'Nicolai Mølgaard Christensen | Software Developer',
+  canonical: 'nicolaic.com',
+  description: "This is my website and it's currently under construction",
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://nicolaic.com/',
-    site_name: 'nicolaic.com',
+    url: 'nicolaic.com/',
+    site_name: 'Nicolai Mølgaard Christensen | Software Developer',
     title: 'nicolaic.com',
-    description: 'This is my website and yeah -> its very much under construction',
+    description: "This is my website and it's currently under construction",
     images: [
       {
         url: 'https://www.nicolaic.com/default.png',

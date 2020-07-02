@@ -14,8 +14,8 @@ export default () => (
       overflow-x: hidden;
       background-color: #343747;
       color: #fff;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
-        sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        Helvetica, Arial, sans-serif;
       font-size: 16px;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
@@ -28,8 +28,8 @@ export default () => (
     h3,
     p,
     li {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
-        sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        Helvetica, Arial, sans-serif;
       margin-left: 0;
       margin-right: 0;
       margin-top: 0;
@@ -49,15 +49,6 @@ export default () => (
     }
     h3 {
       font-size: 1.25rem;
-    }
-    code,
-    .code {
-      border: 1px solid #94959e;
-      border-radius: 4px;
-      font-size: 0.9rem;
-      padding: 0.1rem 0.2rem;
-      background-color: #3f4052;
-      color: #8bcc57;
     }
     @media (min-width: 1280px) {
       h1,
