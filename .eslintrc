@@ -4,11 +4,16 @@
   },
   "parser": "babel-eslint",
   "parserOptions": {
-    "sourceType": "module",
-    "allowImportExportEverywhere": false
+    "sourceType": "module"
   },
   "plugins": ["react", "prettier", "react-hooks"],
-  "extends": ["airbnb", "prettier", "prettier/react", "plugin:react/recommended"],
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "airbnb",
+    "prettier",
+    "prettier/react"
+  ],
   "settings": {
     "import/resolver": {
       "node": {
@@ -17,8 +22,6 @@
     }
   },
   "rules": {
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
     "react/prop-types": "off",
     "react/display-name": "off",
     "react/self-closing-comp": "warn",
