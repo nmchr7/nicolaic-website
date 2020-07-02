@@ -4,10 +4,17 @@ export const pageview = (url) => {
   });
 };
 
-export const GAEvent = ({ action, category, label, value }) => {
+export const GAEvent = ({
+  action,
+  category,
+  label,
+  value,
+  nonInteraction = false,
+}) => {
   window.gtag('event', action, {
     event_category: category,
     event_label: label,
     value,
+    nonInteraction,
   });
 };
