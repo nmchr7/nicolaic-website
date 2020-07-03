@@ -2,21 +2,21 @@
   "name": "nicolaic-site",
   "version": "1.0.0",
   "scripts": {
-    "dev": "next dev",
+    "dev": "NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
     "analyze": "ANALYZE=true yarn build"
   },
   "dependencies": {
     "@next/bundle-analyzer": "~9.4.4",
-    "@sentry/browser": "~5.17.0",
-    "@sentry/node": "~5.17.0",
-    "@sentry/webpack-plugin": "~1.11.1",
+    "@sentry/browser": "~5.19.0",
+    "@sentry/node": "~5.19.0",
+    "@sentry/webpack-plugin": "~1.12.0",
     "@zeit/next-source-maps": "0.0.4-canary.1",
     "faker": "~4.1.0",
     "next": "~9.4.4",
-    "next-pwa": "~2.6.1",
-    "next-seo": "~4.5.0",
+    "next-pwa": "~3.0.1",
+    "next-seo": "~4.7.1",
     "react": "~16.13.1",
     "react-dom": "~16.13.1"
   },
@@ -25,11 +25,13 @@
     "eslint": "~7.3.1",
     "eslint-config-airbnb": "~18.2.0",
     "eslint-config-prettier": "~6.11.0",
-    "eslint-plugin-import": "~2.21.2",
+    "eslint-plugin-import": "~2.22.0",
     "eslint-plugin-jsx-a11y": "~6.3.1",
     "eslint-plugin-prettier": "~3.1.4",
-    "eslint-plugin-react": "~7.20.0",
-    "eslint-plugin-react-hooks": "~4.0.4",
+    "eslint-plugin-react": "~7.20.3",
+    "eslint-plugin-react-hooks": "~4.0.5",
+    "husky": "~4.2.5",
+    "lint-staged": "~10.2.11",
     "prettier": "~2.0.5"
   }
 }
