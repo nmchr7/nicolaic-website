@@ -51,11 +51,11 @@ const nextConfig = {
         urlPattern: /^https?.*/,
         handler: 'NetworkFirst',
         options: {
-          cacheName: 'https-calls',
-          networkTimeoutSeconds: 15,
+          cacheName: 'offline-cache',
+          networkTimeoutSeconds: 10,
           expiration: {
             maxEntries: 150,
-            maxAgeSeconds: 30 * 24 * 60 * 60, // 1 month
+            maxAgeSeconds: 24 * 60 * 60, // 24 hours
           },
           cacheableResponse: {
             statuses: [0, 200],
