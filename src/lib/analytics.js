@@ -15,6 +15,6 @@ export const GAEvent = ({
     event_category: category,
     event_label: label,
     value,
-    nonInteraction,
+    non_interaction: nonInteraction,
   });
 };
