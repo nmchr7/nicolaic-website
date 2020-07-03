@@ -6,7 +6,7 @@ export default () => (
     <ProfileBadge imgSrc="assets/profile_image.jpg" />
     <h1>Nicolai Mølgaard Christensen</h1>
     <h2>
-      Hi there! I&apos;m a software developer spceializing in Frontend
+      Hi there! I&apos;m a software developer specializing in Frontend
       technologies. My current focus is on React, NextJS and more
     </h2>
     <p>
