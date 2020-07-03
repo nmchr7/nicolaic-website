@@ -2,38 +2,43 @@ import theme from '../styles/theme';
 import ProfileBadge from '../components/ProfileImage';
 
 export default () => (
-  <div>
+  <div className="container">
     <ProfileBadge imgSrc="assets/profile_image.jpg" />
-    <h1>Nicolai Mølgaard Christensen</h1>
-    <h2>
+    <h1 className="name">Nicolai Mølgaard Christensen</h1>
+    <h2 className="heading">
       Hi there! I&apos;m a software developer specializing in frontend
       technologies. My current focus is on React, NextJS and more
     </h2>
-    <p>
+    <p className="disclaimer">
       This website is WIP and more is to come very soon. It is also&nbsp;
-      <a href="https://github.com/nmchr7/nicolaic-website">open source</a>
+      <a
+        className="repo-link"
+        href="https://github.com/nmchr7/nicolaic-website"
+      >
+        open source
+      </a>
     </p>
     <style jsx>{`
-      div {
+      .container {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         height: 100vh;
       }
-      h1 {
+      .name {
         margin-top: 15px;
       }
-      h2 {
+      .heading {
         text-align: center;
         max-width: 380px;
       }
-      p {
+      .disclaimer {
         font-size: 1rem;
         text-align: center;
         max-width: 380px;
       }
-      a {
+      .repo-link {
         font-size: inherit;
         color: ${theme.color.secondary};
       }
