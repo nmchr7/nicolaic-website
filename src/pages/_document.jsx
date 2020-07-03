@@ -12,8 +12,10 @@ const GA = `
 `;
 
 const Script = ({ src }) => {
-  // eslint-disable-next-line react/no-danger
-  return <script type="text/javascript" dangerouslySetInnerHTML={{ __html: src }} />;
+  return (
+    // eslint-disable-next-line react/no-danger
+    <script dangerouslySetInnerHTML={{ __html: src }} />
+  );
 };
 
 export default class MainDocument extends Document {
@@ -21,17 +23,33 @@ export default class MainDocument extends Document {
     return (
       <html lang="en">
         <Head>
-          <link rel="manifest" href="/manifest.json" />
           <meta name="theme-color" content="#f95700" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <link rel="preconnect" href="https://www.google-analytics.com" />
+          <link rel="manifest" href="/manifest.json" />
           <link rel="apple-touch-icon" href="/icon-180x180.png" />
-          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-          <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="/favicon-96x96.png"
+          />
         </Head>
         <body>
           <Main />
           <NextScript />
-
           {isProduction && (
             <>
               <script

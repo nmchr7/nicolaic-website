@@ -1,7 +1,7 @@
 import { DefaultSeo } from 'next-seo';
 import * as Sentry from '@sentry/node';
 
-import GlobalStyle from '../style/global';
+import GlobalStyle from '../styles/global';
 import SEO from '../../next-seo.config';
 import { GAEvent } from '../lib/analytics';
 
