@@ -6,12 +6,11 @@ export default () => (
     <ProfileBadge imgSrc="assets/profile_image.jpg" />
     <h1>Nicolai Mølgaard Christensen</h1>
     <h2>
-      Hi there! I&apos;m a software developer specializing in Frontend
+      Hi there! I&apos;m a software developer specializing in frontend
       technologies. My current focus is on React, NextJS and more
     </h2>
     <p>
-      This website is work-in-progres and more is to come very soon. It is
-      also&nbsp;
+      This website is WIP and more is to come very soon. It is also&nbsp;
       <a href="https://github.com/nmchr7/nicolaic-website">open source</a>
     </p>
     <style jsx>{`
