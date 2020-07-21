@@ -16,6 +16,7 @@ const {
 
 process.env.SENTRY_DSN = SENTRY_DSN;
 
+const isProduction = NODE_ENV === 'isProduction';
 const nextConfig = {
   webpack: (config, options) => {
     const copy = config;
@@ -23,12 +24,12 @@ const nextConfig = {
       copy.resolve.alias['@sentry/node'] = '@sentry/browser';
     }
     if (
+      isProduction &&
       !ANALYZE &&
       SENTRY_DSN &&
       SENTRY_ORG &&
       SENTRY_PROJECT &&
-      SENTRY_AUTH_TOKEN &&
-      NODE_ENV === 'production'
+      SENTRY_AUTH_TOKEN
     ) {
       copy.plugins.push(
         new SentryWebpackPlugin({
@@ -45,7 +46,7 @@ const nextConfig = {
 
   pwa: {
     dest: 'public',
-    disable: process.env.NODE_ENV === 'development',
+    disable: !isProduction,
     runtimeCaching: [
       {
         urlPattern: /^https?.*/,

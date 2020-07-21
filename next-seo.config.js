@@ -1,14 +1,16 @@
 export default {
   title: 'Nicolai Mølgaard Christensen | Software Developer',
   canonical: 'nicolaic.com',
-  description: "This is my website and it's currently under construction",
+  description:
+    'Software developer with 3+ years of professional experience, mainly working with JavaScript and React. Helping companies create scalable applications for mobile and the modern web.',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'nicolaic.com/',
     site_name: 'Nicolai Mølgaard Christensen | Software Developer',
     title: 'nicolaic.com',
-    description: "This is my website and it's currently under construction",
+    description:
+      'Software developer with 3+ years of professional experience, mainly working with JavaScript and React. Helping companies create scalable applications for mobile and the modern web.',
     images: [
       {
         url: 'https://www.nicolaic.com/default.png',

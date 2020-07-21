@@ -1,13 +1,14 @@
 import theme from '../styles/theme';
-import ProfileBadge from '../components/ProfileImage';
+import ProfileImage from '../components/ProfileImage';
 
 export default () => (
   <div className="container">
-    <ProfileBadge imgSrc="assets/profile_image.jpg" />
+    <ProfileImage />
     <h1 className="name">Nicolai Mølgaard Christensen</h1>
     <h2 className="heading">
-      Hi there! I&apos;m a software developer specializing in frontend
-      technologies. My current focus is on React, NextJS and more
+      Software developer with 3+ years of professional experience, mainly
+      working with JavaScript and React. Helping companies create scalable
+      applications for mobile and the modern web.
     </h2>
     <p className="disclaimer">
       This website is WIP and more is to come very soon. It is also&nbsp;
@@ -31,12 +32,12 @@ export default () => (
       }
       .heading {
         text-align: center;
-        max-width: 380px;
+        max-width: 425px;
       }
       .disclaimer {
         font-size: 1rem;
         text-align: center;
-        max-width: 380px;
+        max-width: 425px;
       }
       .repo-link {
         font-size: inherit;

@@ -1,25 +1,15 @@
 import theme from '../styles/theme';
 
-export default ({ imgSrc }) => {
+export default () => {
   return (
     <>
-      <div>
-        <img src={imgSrc} alt="" />
-      </div>
+      <img className="profile_image" src="assets/profile_image.jpg" alt="" />
       <style jsx>{`
-        div {
-          display: flex;
-          align-items: center;
-          justify-content: center;
+        .profile_image {
           width: 200px;
           height: 200px;
-          border: 10px solid ${theme.color.primary};
-          border-radius: 50%;
-        }
-        img {
-          width: 190px;
-          height: 190px;
-          border-radius: 50%;
+          border: 5px solid ${theme.color.primary};
+          border-radius: 100px;
         }
       `}</style>
     </>
