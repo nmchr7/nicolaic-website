@@ -16,7 +16,7 @@ const {
 
 process.env.SENTRY_DSN = SENTRY_DSN;
 
-const isProduction = NODE_ENV === 'isProduction';
+const isProduction = NODE_ENV === 'production';
 const nextConfig = {
   webpack: (config, options) => {
     const copy = config;
@@ -46,24 +46,6 @@ const nextConfig = {
 
   pwa: {
     dest: 'public',
-    disable: !isProduction,
-    runtimeCaching: [
-      {
-        urlPattern: /^https?.*/,
-        handler: 'NetworkFirst',
-        options: {
-          cacheName: 'offline-cache',
-          networkTimeoutSeconds: 10,
-          expiration: {
-            maxEntries: 150,
-            maxAgeSeconds: 24 * 60 * 60, // 24 hours
-          },
-          cacheableResponse: {
-            statuses: [0, 200],
-          },
-        },
-      },
-    ],
   },
 };
 

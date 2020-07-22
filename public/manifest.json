@@ -1,8 +1,8 @@
 {
-  "short_name": "NicolaiC",
-  "name": "NicolaiC",
+  "short_name": "Nicolai",
+  "name": "Nicolai Mølgaard Christensen",
   "lang": "en",
-  "description": "This one is a TODO for now",
+  "description": "'Software developer with 3+ years of professional experience, mainly working with JavaScript and React. Helping companies create scalable applications for mobile and the modern web.'",
   "background_color": "#00a4cc",
   "theme_color": "#f95700",
   "dir": "ltr",
@@ -12,7 +12,8 @@
     {
       "src": "/icon-512x512.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any maskable"
     },
     {
       "src": "/android-icon-192x192.png",
