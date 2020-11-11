@@ -1,6 +1,6 @@
 import theme from '../styles/theme';
 
-export default () => {
+export default function ProfileImage() {
   return (
     <>
       <img className="profile_image" src="assets/profile_image.jpg" alt="" />
@@ -14,4 +14,4 @@ export default () => {
       `}</style>
     </>
   );
-};
+}

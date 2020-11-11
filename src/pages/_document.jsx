@@ -1,4 +1,4 @@
-import Document, { Head, Main, NextScript } from 'next/document';
+import Document, { Head, Html, Main, NextScript } from 'next/document';
 
 const isProduction = process.env.NODE_ENV === 'production';
 
@@ -21,13 +21,14 @@ const Script = ({ src }) => {
 export default class MainDocument extends Document {
   render() {
     return (
-      <html lang="en">
+      <Html>
         <Head>
           <meta name="theme-color" content="#f95700" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="preconnect" href="https://www.google-analytics.com" />
           <link rel="manifest" href="/manifest.json" />
           <link rel="apple-touch-icon" href="/icon-180x180.png" />
+          <link rel="canonical" href="https://nicolaic.com" />
           <link
             rel="icon"
             type="image/png"
@@ -61,7 +62,7 @@ export default class MainDocument extends Document {
             </>
           )}
         </body>
-      </html>
+      </Html>
     );
   }
 }

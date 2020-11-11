@@ -23,10 +23,12 @@ export function reportWebVitals({ id, name, label, value }) {
   }
 }
 
-export default ({ Component, pageProps }) => (
-  <>
-    <DefaultSeo {...SEO} />
-    <Component {...pageProps} />
-    <GlobalStyle />
-  </>
-);
+export default function App({ Component, pageProps }) {
+  return (
+    <>
+      <DefaultSeo {...SEO} />
+      <Component {...pageProps} />
+      <GlobalStyle />
+    </>
+  );
+}

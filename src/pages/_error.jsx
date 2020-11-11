@@ -1,7 +1,7 @@
 import NextErrorComponent from 'next/error';
 import * as Sentry from '@sentry/node';
 
-export default ({ statusCode, hasGetInitialPropsRun, err }) => {
+export default function Erro({ statusCode, hasGetInitialPropsRun, err }) {
   if (!hasGetInitialPropsRun && err) {
     // getInitialProps is not called in case of
     // https://github.com/vercel/next.js/issues/8592. As a workaround, we pass
@@ -10,7 +10,7 @@ export default ({ statusCode, hasGetInitialPropsRun, err }) => {
   }
 
   return <NextErrorComponent statusCode={statusCode} />;
-};
+}
 
 Error.getInitialProps = async ({ res, err, asPath }) => {
   const errorInitialProps = await NextErrorComponent.getInitialProps({
