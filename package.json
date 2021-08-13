@@ -14,7 +14,7 @@
     "@sentry/webpack-plugin": "~1.13.0",
     "@zeit/next-source-maps": "0.0.4-canary.1",
     "faker": "~5.1.0",
-    "next": "~10.0.1",
+    "next": "~11.1.0",
     "next-pwa": "~3.1.5",
     "next-seo": "~4.17.0",
     "react": "~17.0.1",
