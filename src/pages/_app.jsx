@@ -1,16 +1,10 @@
 import { DefaultSeo } from 'next-seo';
-import * as Sentry from '@sentry/node';
 
 import GlobalStyle from '../styles/global';
 import SEO from '../../next-seo.config';
 import { GAEvent } from '../lib/analytics';
 
 const isProduction = process.env.NODE_ENV === 'production';
-
-Sentry.init({
-  enabled: isProduction,
-  dsn: process.env.NEXT_PUBLIC_SENTRY_DSN,
-});
 
 export function reportWebVitals({ id, name, label, value }) {
   if (isProduction) {
@@ -26,9 +20,9 @@ export function reportWebVitals({ id, name, label, value }) {
 export default function App({ Component, pageProps }) {
   return (
     <>
+      <GlobalStyle />
       <DefaultSeo {...SEO} />
       <Component {...pageProps} />
-      <GlobalStyle />
     </>
   );
 }

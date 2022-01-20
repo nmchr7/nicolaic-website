@@ -1,18 +1,10 @@
 {
-  "env": {
-    "browser": true
-  },
-  "parser": "babel-eslint",
-  "parserOptions": {
-    "sourceType": "module"
-  },
-  "plugins": ["react", "prettier", "react-hooks"],
+  "plugins": ["react", "react-hooks"],
   "extends": [
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "airbnb",
-    "prettier",
-    "prettier/react"
+    "prettier"
   ],
   "settings": {
     "import/resolver": {
