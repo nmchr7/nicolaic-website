@@ -2,7 +2,7 @@ export default {
   title: 'Nicolai Mølgaard Christensen | Software Developer',
   canonical: 'nicolaic.com',
   description:
-    'Software developer with 4+ years of professional experience, mainly working with JavaScript and React. Helping companies create scalable applications for web and mobile.',
+    'Software developer with 5+ years of professional experience, mainly working with JavaScript and React. Helping companies create scalable applications for web and mobile.',
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -10,7 +10,7 @@ export default {
     site_name: 'Nicolai Mølgaard Christensen | Software Developer',
     title: 'nicolaic.com',
     description:
-      'Software developer with 4+ years of professional experience, mainly working with JavaScript and React. Helping companies create scalable applications for web and mobile.',
+      'Software developer with 5+ years of professional experience, mainly working with JavaScript and React. Helping companies create scalable applications for web and mobile.',
     images: [
       {
         url: 'https://www.nicolaic.com/default.png',
