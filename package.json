@@ -16,6 +16,8 @@
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "13.4.6",
+    "@types/node": "20.3.1",
+    "@types/react": "18.2.12",
     "autoprefixer": "10.4.14",
     "eslint": "8.43.0",
     "eslint-config-airbnb": "19.0.4",
@@ -26,6 +28,7 @@
     "eslint-plugin-react-hooks": "4.6.0",
     "postcss": "8.4.24",
     "prettier": "2.8.8",
-    "tailwindcss": "3.3.2"
+    "tailwindcss": "3.3.2",
+    "typescript": "5.1.3"
   }
 }
