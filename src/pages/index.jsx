@@ -1,39 +1,10 @@
 import theme from '../styles/theme';
 import ProfileImage from '../components/ProfileImage';
 
-function Style() {
-  return (
-    <style jsx>{`
-      .container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        height: 100vh;
-      }
-      .name {
-        margin-top: 15px;
-      }
-      .heading {
-        text-align: center;
-        max-width: 425px;
-      }
-      .disclaimer {
-        font-size: 1rem;
-        text-align: center;
-        max-width: 425px;
-      }
-      .repo-link {
-        font-size: inherit;
-        color: ${theme.color.secondary};
-      }
-    `}</style>
-  );
-}
-
 export default function Home() {
   return (
     <>
+      {/* <Style /> */}
       <div className="container">
         <ProfileImage />
         <h1 className="name">Nicolai Mølgaard Christensen</h1>
@@ -52,7 +23,31 @@ export default function Home() {
           </a>
         </p>
       </div>
-      <Style />
+      <style jsx>{`
+        .container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          height: 100vh;
+        }
+        .name {
+          margin-top: 15px;
+        }
+        .heading {
+          text-align: center;
+          max-width: 425px;
+        }
+        .disclaimer {
+          font-size: 1rem;
+          text-align: center;
+          max-width: 425px;
+        }
+        .repo-link {
+          font-size: inherit;
+          color: ${theme.color.secondary};
+        }
+      `}</style>
     </>
   );
 }
