@@ -1,17 +1,13 @@
-import theme from '../styles/theme';
+import Image from 'next/image';
 
 export default function ProfileImage() {
   return (
-    <>
-      <img className="profile_image" src="assets/profile_image.jpg" alt="" />
-      <style jsx>{`
-        .profile_image {
-          width: 200px;
-          height: 200px;
-          border: 5px solid ${theme.color.primary};
-          border-radius: 100px;
-        }
-      `}</style>
-    </>
+    <Image
+      width={200}
+      height={200}
+      className="rounded-full border-4 border-orange-500"
+      src="/assets/profile_image.jpg"
+      alt=""
+    />
   );
 }
